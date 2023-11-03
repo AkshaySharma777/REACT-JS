@@ -1,0 +1,11 @@
+TO INSTALL BOOTSTRAP IN REACT APP
+	There are two options 
+		1) CDN Network
+			-> Copy paste the URL into index.html file.
+			-> Not Recommended
+
+		2) npm install --save bootstrap or npm i bootstrap
+			-> Install it as a dependency package.
+			-> package.json is updated with the latest module as dependency.
+			-> index.js -> import the bootstrap.css/bootstrap.js into the file.
+			-> App.js -> Header add the className 'bg-primary'

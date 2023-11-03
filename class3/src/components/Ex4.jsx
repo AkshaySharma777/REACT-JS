@@ -3,16 +3,16 @@ import React, { Component } from 'react'
 // Global Variables
 let x=21;
 const y =124;
-let title = "Welcome to String data"
-let isAdmin = true
+let title = "Welcome to String data";
+let isAdmin = true;
 
 const user = {
     name:"raju",
     age:21,
     email:"raju@gmail.com"
-}
+};
 
-const emp = ["manu", "chirag", "john","ali"]
+const emp = ["manu", "chirag", "john", "ali"];
 
 class Ex4 extends Component{
     constructor(props){
