@@ -1,5 +1,7 @@
 import React from "react";
-import Info from './components/UserComponent';
+import UserComponent from './components/UserComponent';
+import UserComponent2 from './components/UserComponent2';
+import users from './data/users'
 
 function App() {
   return (
@@ -11,7 +13,11 @@ function App() {
         </div>
       </div>
     </div>
-    <Info/>
+    <UserComponent users = {users}/>
+    <div className="bg-success text-center text-white p-3 rounded shadow">
+      <h1>Class component Props</h1>
+    </div>
+    <UserComponent2 users = {users}/>
   </div>
   );
 }
