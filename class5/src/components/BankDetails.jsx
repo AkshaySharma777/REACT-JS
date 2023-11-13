@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class BankDetails extends Component {
   render() {
-    const { cardExpire, cardNumber, cardType, currency, iban } = this.props;
+    const { cardExpire, cardNumber, cardType, currency, iban } = this.props.bank;
     return (
       <div className="lead border radius p-2">
         <p>

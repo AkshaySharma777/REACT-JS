@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 
 export default class Address extends Component {
-    constructor(props) {
-        super(props)
-    }
   render() {
     const {address, city, state, postalCode, coordinates} = this.props.addr;
     return (

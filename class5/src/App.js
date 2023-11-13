@@ -1,40 +1,40 @@
-import React, { Component } from 'react';
-import Users from './components/Users';
-const url = 'https://dummyjson.com'
+import React, { Component } from "react";
+import Users from "./components/Users";
+const url = "https://dummyjson.com";
 
-class App extends Component{
-  constructor(props){
+class App extends Component {
+  constructor(props) {
     super(props);
     this.state = {
-      users: [],
-    }
+      users: []
+    };
   }
-  componentDidMount(){
+  componentDidMount() {
     fetch(`${url}/users`)
-    .then((res) => res.json())
-    .then((out) => {
-      // console.log('data', out)
-      this.setState({
-        users: out.users,
-      });
-    })
-    .catch((err)=> console.log(err.message));
+      .then((res) => res.json())
+      .then((out) => {
+        // console.log('data', out)
+        this.setState({
+          users: out.users,
+        });
+      })
+      .catch((err) => console.log(err.message));
   }
-  render(){
-    return(
+  render() {
+    return (
       <div>
         <div className="container">
           <div className="row">
             <div className="col">
               <h1 className="display-3 text-success text-center">
-                  Props in class component..!
+                Props in class component..!
               </h1>
             </div>
           </div>
         </div>
-        <Users users = {this.state.users}/>
+        <Users users={this.state.users} />
       </div>
-    )
+    );
   }
 }
 

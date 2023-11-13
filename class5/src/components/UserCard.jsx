@@ -3,9 +3,6 @@ import Address from './Address';
 import BankDetails from './BankDetails';
 
 export default class UserCard extends Component {
-    constructor(props) {
-        super(props)
-    }
   render() {
     const {firstName, lastName, image, email} = this.props;
     return (
@@ -21,7 +18,7 @@ export default class UserCard extends Component {
                                 <i className='bi bi-envelope-open-fill'></i>
                                 <span className="text-primary">{email}</span>
                             </p>
-                        <details>
+                        <details> 
                             <summary>Address Details</summary>
                             <Address addr = {this.props.address}/>
                         </details>
