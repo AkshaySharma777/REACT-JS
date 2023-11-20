@@ -1,0 +1,22 @@
+REACT LIFECYCLE METHODS
+   - A component's lifecycle has 3 main phases: 
+   1) Mounting Phase.
+       - The mounting phase refers to the period when a component is being created and inserted into the DOM.
+
+   2) Updating Phase.
+      - This phase occurs when a component's props or state changes, and the component needs to be updated.
+
+   3) Unmounting Phase.
+      - The unmounting phase refers to the lifecycle stage when a component is being removed from the DOM (Document Object Model) and is no longer rendered or accessible.
+
+   -> These methods allow you to control the component's behavior and perform specific actions at different stages of its lifecycle.
+
+ MOUNTING PHASE METHODS
+   1) constructor() : 
+       ->The constructor method is called when the component is first created.
+       ->The constructor is called when an instance of the components is being created.
+       -> You can use it to initialize state and bind event handlers.
+
+    2) render() :
+       ->This render() method is responsible for generating the component's virtual DOM representation based on its current props and state.
+       -> It is called every time the component needs to be re-rendered, either because its props or state have changed, or because a parent component has been re-rendered.

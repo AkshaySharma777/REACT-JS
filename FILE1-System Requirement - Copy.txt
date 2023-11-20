@@ -1,28 +1,27 @@
 SYSTEM REQUIREMENTS
-    1. NodeJS
-        Install it for free.
+1. NodeJS
+Install it for free.
 
-        node -v (node version)
-            v20.9.0 
-    
-    2. npm version
-        node package manager
+node -v (node version)
+v20.9.0
 
-        10.1.0
+2. npm version
+node package manager
 
-    3. Powerfull editor.
-        -> Visual Studio Code 
-            Free
-        -> Sublime Text 
-        -> Intellij
+10.1.0
 
-    4. Browser 
-        Chrome -> DevTools -> Recommendation
-        Edge
-        Firfox 
+3. Powerful editor.
+-> Visual Studio Code
+Free
+-> Sublime Text
+-> Intellij
 
-    5. create-react-app 
-        Starting point of learning
+4. Browser
+Chrome -> DevTools -> Recommendation
+Edge
+Firefox
 
-        npx create-react-app <appName or Project Name>
-        
+5. create-react-app
+Starting point of learning
+
+npx create-react-app <appName or Project Name>
