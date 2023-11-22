@@ -1,6 +1,6 @@
-import React, {Component, Fragment}  from "react";
+import React, { Component, Fragment } from "react";
 import Counter from "./component/Counter";
-import  ReactDOM  from 'react-dom';
+import ReactDOM from "react-dom";
 
 class App extends Component {
   constructor(props) {
@@ -13,13 +13,15 @@ class App extends Component {
   mount() {
     ReactDOM.render(
       <React.StrictMode>
-        <Counter name={this.state.name} />
-      </React.StrictMode>, document.getElementById("renderHere")
+        <Counter counterProps={0} />
+      </React.StrictMode>,
+      document.getElementById("renderHere")
     );
   }
 
   unmount() {
-    
+    ReactDOM.unmountComponentAtNode(document.getElementById("renderHere"));
+    console.log("component unmounted");
   }
 
   render() {
@@ -35,8 +37,16 @@ class App extends Component {
           </div>
           <div className="row my-3">
             <div className="col">
-              <button className="btn btn-outline-success" onClick={this.mount.bind(this)}>Mount</button>
-              <button className="btn btn-outline-danger float-end" onClick={this.unmount.bind()}>
+              <button
+                className="btn btn-outline-success"
+                onClick={this.mount.bind(this)}
+              >
+                Mount
+              </button>
+              <button
+                className="btn btn-outline-danger float-end"
+                onClick={this.unmount.bind(this)}
+              >
                 UnMount
               </button>
               <hr />
