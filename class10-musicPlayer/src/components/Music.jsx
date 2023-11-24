@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import key from '../config/token'
 import Artist from '../screen/Artist';
+import Search from '../screen/Search';
 const URL = "https://api.spotify.com";
 const Music = () => {
   const [artist, setArtist] = useState([]);
@@ -32,6 +33,7 @@ const Music = () => {
             <h1 className="display-3 text-success text-center">Music</h1>
           </div>
         </div>
+        <Search searchName={searchArtist} />
         <div className="row">
           {
             artist.map((item, index) => {
