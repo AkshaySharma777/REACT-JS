@@ -21,7 +21,7 @@ class Counter extends Component {
       console.log('New Props = ', nP);
       console.log('New State = ', nC);
       if (nP.counterProps >= 10) {
-        this.state.isActive = true;
+        this.setState({ isActive : true })
           }
    
     }
