@@ -17,7 +17,7 @@ function App() {
       <Header/>
       <Routes>
       <Route path={`/`} element={<Home />} />
-        <Route path={`${temp}`} element={<Addition />} />
+        <Route path={`/addition`} element={<Addition />} />
         <Route path={'/subtraction'} element={<Subtraction />} />
         <Route path={'/multiplication'} element={<Multiplication />} />
         <Route path={'/division'} element={<Division />} />

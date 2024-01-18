@@ -22,7 +22,7 @@ const Music = () => {
   }
 
   useEffect(() => {
-    searchArtist('Ilayaraja')
+    searchArtist('Taylor Swift')
   }, []);  
 
   return (

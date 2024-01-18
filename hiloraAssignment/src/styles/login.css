@@ -1,0 +1,11 @@
+.loginButton{
+    background: green;
+    color: white;
+    border: 0px;
+}
+
+.loginButton:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid green;
+}
