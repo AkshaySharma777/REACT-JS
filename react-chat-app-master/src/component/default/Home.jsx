@@ -4,11 +4,9 @@ import "./home.scss"
 import env from 'react-dotenv'
 
 function Home(props) {
-    console.log(env.PROJECT_ID)
     return (
         <div className='app-body'>
-            {/* <ChatContainer/> */}
-            {env.PROJECT_ID}
+            <ChatContainer/>
         </div>
     )
 }

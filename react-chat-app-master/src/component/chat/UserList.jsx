@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import {chatList} from './content/data'
 import "./css/userList.scss"
-function UserList() {
+import { AuthContext } from '../../context/AuthContext';
+
+function UserList(props) {
   const [user, setUser] = useState(false);
+  const context = useContext(AuthContext)
 
   useEffect(() => {
    // setUser(chatList)
   }, [])
 
-  if(!user) {
+  if(!props.displayName) {
     return (
      <div className="chat-list">
       <div className="blk no-user">
@@ -20,26 +23,17 @@ function UserList() {
   }
   return (
     <div className='chat-list'>
-      {
-        chatList && chatList.map((item, index) => {
-          return (
-            <div className={ item.unread ? "blk unread" : "blk" } key={index}>
+
+            <div className={ "blk" } >
              <div className="imgbx">
-              <img src={item.image} alt="no image" style={{ width: '100%' }} />
+              <img src={props.photoURL} alt="no image" />
              </div>
              <div className="details">
                <div className="listhead">
-                  <h4> { item.name } </h4>
-                  <p className='time'> {item.chat_time} </p>
-               </div>   
-               <div className="message_p">
-                <p> { item.chat_content } </p>
-               </div>              
+                  <h4> { props.displayName } </h4>
+               </div>          
              </div>
             </div>
-          )
-        })
-      }
     </div>
   )
 }

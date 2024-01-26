@@ -16,6 +16,43 @@ $grey: #f5f5f5;
         text-transform: capitalize
       }
     }
+
+    .icons {
+      .dropdown {
+        position: relative;
+       .dropdown-menu {
+        position: absolute;
+        height: 100%;
+        width: 10vw;
+        top: 35px;
+        right: 0px;
+        z-index: 999;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          padding: 6px 8px;
+          text-decoration: none;
+          background-color: #222;
+          cursor: pointer;
+          width: 100%;
+          text-align: center;
+          a {
+            text-decoration: none;
+            color: $white;
+            &:hover {
+             color: #222;
+            }
+          }
+          &:hover{
+            background-color: $chat;
+          }
+        }
+      }
+     }
+    }
   }
 
   .chat-box {
