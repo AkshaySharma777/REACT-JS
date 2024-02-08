@@ -35,7 +35,7 @@ export const userCreate  =  (user) => {
 export const userUpdate  =  ({user, id}) => {
     return axiosIns.request({
         url: `/users/${id}`,
-        method: "PATCH",
+        method: "PUT",
         data: user
     })
 }

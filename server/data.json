@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "acbe",
+      "name": "Shiva",
+      "email": "shiva@gmail.com",
+      "mobile": "9036333654"
+    },
+    {
+      "id": "1747",
+      "name": "Krishna ",
+      "email": "krishna@gmail.com",
+      "mobile": "9620847944"
+    },
+    {
+      "id": "65fa",
+      "name": "Akshay",
+      "email": "jsakshay653@gmail.com",
+      "mobile": "9036333653"
+    }
+  ],
+  "products": []
+}

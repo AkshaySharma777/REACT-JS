@@ -10,8 +10,11 @@ import Ex6 from '../component/Ex6';
 import Ex7 from '../component/Ex7';
 import Ex8 from '../component/Ex8';
 import Ex9 from '../component/Ex9';
+import Ex10 from '../component/Ex10';
+import ArithmeticOperations from '../component/ArithmeticOperations';
 import Pnf from '../default/Pnf'
 import RouterContainer from './RouterContainer';
+
 
 // create routes using createBrowserRouter
 export const appRoute = createBrowserRouter([
@@ -54,6 +57,14 @@ export const appRoute = createBrowserRouter([
       {
         path: '/ex9',
         element: <Ex9/>
+      },
+      {
+        path: '/ex10',
+        element: <Ex10/>
+      },
+      {
+        path: '/arithmeticOperations',
+        element: <ArithmeticOperations/>
       },
       {
         path: `/*`,

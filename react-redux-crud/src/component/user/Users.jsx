@@ -69,9 +69,9 @@ function Users() {
                         <td> {item.email} </td>
                         <td> {item.mobile} </td>
                           <NavLink to={`/user/edit/${item.id}`} className="btn btn-info">
-                            <i className="bi bi-pencil"></i>
+                            <i className="bi bi-pencil m-1"></i>
                           </NavLink>
-                          <button className="btn btn-danger" onClick={() => deleteHandler(item.id)}>
+                          <button className="btn btn-danger m-1" onClick={() => deleteHandler(item.id)}>
                             <i className="bi bi-trash"></i>
                           </button>
                       </tr>

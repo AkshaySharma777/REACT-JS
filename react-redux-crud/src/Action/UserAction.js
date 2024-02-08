@@ -23,9 +23,9 @@ export const readUser = createAsyncThunk(READ_USER, async () => {
   return res.data
 })
 
-
 export const updateUser = createAsyncThunk(UPDATE_USER, async ({user, id}) => {
-
+   const res = await userUpdate({ user, id })
+   return res.data
 })
 
 export const deleteUser = createAsyncThunk(DELETE_USER, async ({id}) => {

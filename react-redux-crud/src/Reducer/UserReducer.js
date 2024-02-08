@@ -21,7 +21,12 @@ const UserSlice = createSlice({
                     return [...action.payload]
                 })
                 .addCase(readUser.rejected, () => {})
-                .addCase(updateUser.fulfilled, (state,action)=> {})
+                .addCase(updateUser.fulfilled, (state,action)=> {
+                    const index = state.findIndex(item => item.id === action.payload.id)
+                    state[index] = {
+                        ...state[index], ...action.payload
+                    }
+                })
                 .addCase(updateUser.rejected, () => {})
                 .addCase(deleteUser.fulfilled, (state,action) => {
                     const index = state.findIndex((item) => item.id === action.payload.id)

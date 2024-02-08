@@ -41,6 +41,12 @@ function Header() {
             <li className="navitem">
               <NavLink to={`/ex9`} className="nav-link">Ex9</NavLink>
             </li>
+            <li className="navitem">
+              <NavLink to={`/ex10`} className="nav-link">Ex10</NavLink>
+            </li>
+            <li className="navitem">
+              <NavLink to={`/arithmeticOperations`} className="nav-link">ArithmeticOperations</NavLink>
+            </li>
            </ul>
           </div>
         </div>
